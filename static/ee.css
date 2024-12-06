@@ -1,0 +1,88 @@
+/* 전체 페이지 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 네비게이션 바 스타일 */
+.navbar {
+  background-color: #333; /* 어두운 배경색 */
+  overflow: hidden;
+  padding: 10px 20px; /* 상하, 좌우 여백 */
+  position: fixed; /* 스크롤해도 고정 */
+  top: 0;
+  width: 100%; /* 화면 전체 너비 */
+  z-index: 1000; /* 최상위에 표시 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 약간의 그림자 */
+}
+
+.navbar-list {
+  list-style-type: none; /* 리스트 스타일 제거 */
+  margin: 0;
+  padding: 0;
+  display: flex; /* 가로 정렬 */
+  justify-content: center; /* 중앙 정렬 */
+}
+
+.navbar-item {
+  margin: 0 15px; /* 아이템 간격 */
+}
+
+.navbar-item a {
+  color: white; /* 글자색 */
+  text-decoration: none; /* 밑줄 제거 */
+  font-size: 18px; /* 글자 크기 */
+  font-weight: bold; /* 글자 굵기 */
+  padding: 8px 12px; /* 내부 여백 */
+  border-radius: 5px; /* 둥근 모서리 */
+  transition: background-color 0.3s ease; /* 부드러운 마우스오버 효과 */
+}
+
+.navbar-item a:hover {
+  background-color: #575757; /* 마우스오버 색상 */
+}
+
+/* 콘텐츠 섹션 */
+.content {
+  margin-top: 80px; /* 네비게이션 바 높이만큼 여백 */
+  text-align: center; /* 중앙 정렬 */
+  padding: 20px;
+}
+
+/* 제목 스타일 */
+.content h1 {
+  font-size: 32px; /* 제목 크기 */
+  color: #2c7a7b; /* 녹색 톤 색상 */
+  font-weight: bold; /* 굵은 글자 */
+  margin-bottom: 20px; /* 아래 여백 */
+}
+
+/* 이미지 스타일 */
+.image-container img {
+  max-width: 80%; /* 화면 너비의 80%로 조정 */
+  height: auto; /* 비율 유지 */
+  border-radius: 10px; /* 둥근 모서리 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+/* "홈으로 돌아가기" 버튼 스타일 */
+.return-home-btn {
+  display: inline-block; /* 버튼 형태 */
+  background-color: #4CAF50; /* 밝은 녹색 배경 */
+  color: white; /* 텍스트 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  padding: 12px 25px; /* 버튼 내부 여백 */
+  font-size: 18px; /* 글자 크기 */
+  font-weight: bold; /* 글자 굵기 */
+  border-radius: 25px; /* 둥근 모서리 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  margin-top: 20px; /* 위쪽 여백 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.return-home-btn:hover {
+  background-color: #45a049; /* 마우스 오버시 더 어두운 녹색 */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* 마우스 오버시 그림자 증가 */
+  transform: scale(1.05); /* 약간 확대 */
+}

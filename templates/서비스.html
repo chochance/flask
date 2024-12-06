@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대전 스타벅스 개수</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="myBarChart" width="400" height="200"></canvas>
+    
+    <script>
+        var ctx = document.getElementById('myBarChart').getContext('2d');
+        var myBarChart = new Chart(ctx, {
+            type: 'bar', // 막대 그래프 유형
+            data: {
+                labels: ['서구', '유성구', '대덕구', '동구', '중구'], // x축 레이블 (카테고리)
+                datasets: [{
+                    label: '서구 스타벅스 개수',
+                    data: [28, 19, 5, 7, 7], // 각 카테고리의 값 (y축 값)
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)', // 막대 색
+                    borderColor: 'rgba(54, 162, 235, 1)', // 막대 테두리 색
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true, // 화면 크기에 맞게 반응형
+                scales: {
+                    y: {
+                        beginAtZero: true // y축이 0부터 시작하도록 설정
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+

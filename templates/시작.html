@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서구 커피숍 상권분석</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ee.css') }}">
+</head>
+<body>
+
+    <!-- 네비게이션 바 -->
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="{{ url_for('home') }}">홈</a></li>
+            <li class="navbar-item"><a href="{{ url_for('introduce') }}">소개</a></li>
+            <li class="navbar-item"><a href="{{ url_for('service') }}">서비스</a></li>
+            <li class="navbar-item"><a href="{{ url_for('register') }}">회원가입</a></li>
+            <li class="navbar-item"><a href="{{ url_for('login') }}">로그인</a></li>
+        </ul>
+    </nav>
+
+    <!-- 페이지 내용 -->
+    <div class="content">
+        <h1>서구 커피숍 상권분석</h1>
+       
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='스타벅스 사진.jpg') }}" alt="첫 화면에 보일 이미지">
+        </div>    
+
+    </div>
+
+</body>
+</html>

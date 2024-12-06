@@ -1,0 +1,32 @@
+/* 로그인 버튼 스타일 */
+.login-button {
+  background-color: #007BFF; /* 파란색 배경 */
+  color: white; /* 텍스트 색상 */
+  border: none;
+  padding: 15px 30px; /* 위아래 15px, 좌우 30px */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px; /* 둥근 모서리 */
+  cursor: pointer;
+  width: 100%; /* 버튼 너비를 부모 요소에 맞게 */
+  max-width: 300px; /* 버튼의 최대 너비를 설정 */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* 효과 추가 */
+}
+
+/* 마우스 오버 시 버튼 색상 변경 */
+.login-button:hover {
+  background-color: #0056b3; /* 마우스 오버 시 더 어두운 파란색 */
+  transform: translateY(-3px); /* 위로 살짝 올라가는 효과 */
+}
+
+/* 버튼 클릭 시 색상 변화 */
+.login-button:active {
+  background-color: #004085; /* 클릭 시 어두운 파란색 */
+  transform: translateY(1px); /* 클릭 시 눌리는 효과 */
+}
+
+/* 로그인 버튼에 포커스될 때 스타일 */
+.login-button:focus {
+  outline: none; /* 포커스 아웃라인 제거 */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 파란색 그림자 효과 */
+}
